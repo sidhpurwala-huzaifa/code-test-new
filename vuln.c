@@ -7,8 +7,8 @@ int main(void)
     int pass = 0;
 
     printf("\n Enter the password : \n");
-    gets(buff);
-
+    fgets(buffer, BUFFERSIZE, stdin);
+    
     if(strcmp(buff, "helloworld"))
     {
         printf ("\n Wrong Password \n");
